@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import {FloatingLabelInput} from 'react-native-floating-label-input';
 
-export default function App() {
+function EntryScreen() {
   const [cont, setCont] = useState('')
   const [show, setShow] = useState(false)
 
@@ -37,3 +37,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default EntryScreen;
